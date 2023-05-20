@@ -1,0 +1,10 @@
+Guatemala AntiguaGuatemala 1 2 3 4
+Guatemala Chimaltenango 2 3 4 5
+Guatemala Escuintla 3 4 5 6
+Guatemala Quetzaltenango 4 5 6 7
+Quetzaltenango Huehuetenango 2 3 4 5
+Quetzaltenango Retalhuleu 3 4 5 6
+Chimaltenango Sololá 1 2 3 4
+Chimaltenango Zacapa 4 5 6 7
+AntiguaGuatemala Cobán 3 4 5 6
+Coban PuertoBarrios 2 3 4 5
