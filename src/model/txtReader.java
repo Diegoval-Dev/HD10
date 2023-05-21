@@ -30,7 +30,8 @@ public class txtReader {
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String[] line = myReader.nextLine().split(" ");
-                rutas.add(new Ruta(line[0].trim(),line[1].trim(),line[2].trim(),line[3].trim(),line[4].trim(),line[5].trim()));
+                rutas.add(new Ruta(line[0].trim(),line[1].trim(),Integer.parseInt(line[2].trim()),
+                        Integer.parseInt(line[3].trim()),Integer.parseInt(line[4].trim()),Integer.parseInt(line[5].trim())));
             }
             myReader.close();
         } catch (FileNotFoundException e) {

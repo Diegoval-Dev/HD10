@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ee69604-3d2e-405b-a3b1-a1e99673d2ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Arista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/FloydWarshall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Grafo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Ruta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Vertice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ciudades.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/txtReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/txtReaderTest.java" afterDir="false" />
+    <list default="true" id="2ee69604-3d2e-405b-a3b1-a1e99673d2ef" name="Changes" comment="Se crearon los elementos necesarios, el objto rutas, el lector de los tiempos, el grafo y sus componentes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HD10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HD10.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Arista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Arista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Grafo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Grafo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Ruta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Ruta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Vertice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Vertice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/txtReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/txtReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,14 @@
       <recent name="test" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="HD10" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="txtReaderTest.returnArr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HD10" />
       <extension name="coverage">
@@ -84,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.txtReaderTest.returnArr" />
       </list>
     </recent_temporary>
@@ -97,8 +101,16 @@
       <option name="presentableId" value="Default" />
       <updated>1684251093450</updated>
       <workItem from="1684251095430" duration="842000" />
-      <workItem from="1684603691200" duration="3600000" />
+      <workItem from="1684603691200" duration="11392000" />
     </task>
+    <task id="LOCAL-00001" summary="Se crearon los elementos necesarios, el objto rutas, el lector de los tiempos, el grafo y sus componentes">
+      <created>1684616640386</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684616640386</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +126,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se crearon los elementos necesarios, el objto rutas, el lector de los tiempos, el grafo y sus componentes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crearon los elementos necesarios, el objto rutas, el lector de los tiempos, el grafo y sus componentes" />
   </component>
 </project>

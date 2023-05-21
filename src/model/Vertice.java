@@ -1,9 +1,13 @@
 package model;
 
 public class Vertice {
-    private int id;
+    private String name;
 
-    public Vertice(int id) {
-        this.id = id;
+    public Vertice(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }

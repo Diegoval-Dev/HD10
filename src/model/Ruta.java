@@ -3,12 +3,14 @@ package model;
 public class Ruta {
     private String desde;
     private String hacia;
-    private String tiempoNormal;
-    private String tiempoLluvia;
-    private String tiempoNieve;
-    private String tiempoTormenta;
+    private int tiempoNormal;
+    private int tiempoLluvia;
+    private int tiempoNieve;
+    private int tiempoTormenta;
 
-    public Ruta(String desde, String hacia, String tiempoNormal, String tiempoLluvia, String tiempoNieve, String tiempoTormenta) {
+    private int  tiempo;
+
+    public Ruta(String desde, String hacia, int tiempoNormal, int tiempoLluvia, int tiempoNieve, int tiempoTormenta) {
         this.desde = desde;
         this.hacia = hacia;
         this.tiempoNormal = tiempoNormal;
@@ -33,36 +35,52 @@ public class Ruta {
         this.hacia = hacia;
     }
 
-    public String getTiempoNormal() {
+    public int getTiempoNormal() {
         return tiempoNormal;
     }
 
-    public void setTiempoNormal(String tiempoNormal) {
+    public void setTiempoNormal(int tiempoNormal) {
         this.tiempoNormal = tiempoNormal;
     }
 
-    public String getTiempoLluvia() {
+    public int getTiempoLluvia() {
         return tiempoLluvia;
     }
 
-    public void setTiempoLluvia(String tiempoLluvia) {
+    public void setTiempoLluvia(int tiempoLluvia) {
         this.tiempoLluvia = tiempoLluvia;
     }
 
-    public String getTiempoNieve() {
+    public int getTiempoNieve() {
         return tiempoNieve;
     }
 
-    public void setTiempoNieve(String tiempoNieve) {
+    public void setTiempoNieve(int tiempoNieve) {
         this.tiempoNieve = tiempoNieve;
     }
 
-    public String getTiempoTormenta() {
+    public int getTiempoTormenta() {
         return tiempoTormenta;
     }
 
-    public void setTiempoTormenta(String tiempoTormenta) {
+    public void setTiempoTormenta(int tiempoTormenta) {
         this.tiempoTormenta = tiempoTormenta;
+    }
+
+    public int getTiempo() {
+        return tiempo;
+    }
+
+    public void setTiemo(String _tiempo) {
+        if (_tiempo.equals("Normal")){
+            this.tiempo = this.tiempoNormal;
+        } else if (_tiempo.equals("Lluvia")) {
+            this.tiempo = this.tiempoLluvia;
+        } else if (_tiempo.equals("Nevado")) {
+            this.tiempo = this.tiempoNieve;
+        } else if (_tiempo.equals("Tormenta")) {
+            this.tiempo = this.tiempoTormenta;
+        }
     }
 
     @Override
