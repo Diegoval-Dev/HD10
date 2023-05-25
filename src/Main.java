@@ -1,6 +1,7 @@
 import model.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     static UI ui = new UI();
@@ -8,6 +9,30 @@ public class Main {
     public static void main(String[] args) {
 
         Grafo grafo = createGrafo();
+
+        Vertice origen = grafo.obtenerVertice("Guatemala");
+        Vertice destino = grafo.obtenerVertice("AntiguaGuatemala");
+        List<Vertice> rutaMasCorta = grafo.encontrarRutaMasCorta(origen, destino);
+
+        if (!rutaMasCorta.isEmpty()) {
+            System.out.println("Ruta más corta encontrada:");
+            for (Vertice vertice : rutaMasCorta) {
+                System.out.println(vertice.getName());
+            }
+
+            int pesoTotal = grafo.calcularPesoTotalRuta(rutaMasCorta);
+            System.out.println("Peso total de la ruta: " + pesoTotal);
+        } else {
+            System.out.println("No se encontró una ruta válida entre los vértices.");
+        }
+
+        Vertice centro = grafo.encontrarCentroGrafo();
+
+        if (centro != null) {
+            System.out.println("Centro del grafo: " + centro.getName());
+        } else {
+            System.out.println("El grafo está vacío, no se puede determinar el centro.");
+        }
 
     }
     public static Grafo createGrafo(){
